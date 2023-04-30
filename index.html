@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleForm</title>
+
+    <link rel="stylesheet" href="simple-form.css">
+    <script defer src="simple-form.js"></script>
+
+</head>
+
+<body>
+
+    <form action="" class="form-container sign">
+
+        <div class="fieldset-container">
+            <!-- SIGNUP -->
+            <fieldset class="signup-container">
+
+                <legend>
+
+                    <h1>Get Started!</h1>
+                    <p class="form-link">Already have an account? <a class="toggle" href="#">Log in now.</a></p>
+
+                </legend>
+
+                <!-- USERNAME -->
+                <div class="input-container username">
+
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+
+                </div>
+
+                <!-- EMAIL -->
+                <div class="input-container email">
+
+                    <label for="email">Email Address</label>
+                    <input type="text" id="email" name="email" placeholder="example@email.com">
+
+                </div>
+
+                <!-- GENDER & BIRTH -->
+                <div class="input-container split">
+
+                    <div class="input-box left gender">
+
+                        <label for="gender">Gender</label>
+                        <div class="select">
+
+                            <select id="gender" name="gender">
+
+                                <option value="">Select Gender</option>
+                                <option value="f">Female</option>
+                                <option value="m">Male</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+                    <div class="input-box right birth">
+
+                        <label for="birthday">Birthday</label>
+                        <input type="date" id="birthday" name="birthday">
+
+                    </div>
+
+                </div>
+
+                <!-- PASSWORD -->
+                <div class="input-container">
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Password">
+
+                </div>
+
+            </fieldset>
+
+            <!-- LOGIN -->
+            <fieldset class="login-container hidden">
+
+                <legend>
+
+                    <h1>Log in!</h1>
+                    <p class="form-link">Not registered yet? <a class="toggle" href="#">Sign up now.</a></p>
+
+                </legend>
+
+                <!-- USERNAME -->
+                <div class="input-container">
+
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="username388">
+
+                </div>
+
+                <!-- PASSWORD -->
+                <div class="input-container">
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="********">
+
+                </div>
+
+            </fieldset>
+
+        </div>
+
+        <!-- SUBMIT -->
+        <input class="submit-btn" type="submit" value="Signup">
+
+    </form>
+
+</body>
+
+</html>
